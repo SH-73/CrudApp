@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>crud App</title>
+    <link rel="stylesheet" href="crud.css">
+    
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <form autocomplete="off" onsubmit="onformsubmit">
+                    <div>
+                        <label for="product code">Product Code</label>
+                        <input type="text" name="product code" id="ProductCode">
+                    </div>
+                    <div>
+                        <label for="product">Product Name</label>
+                        <input type="text" name="product code" id="ProductName">
+                    </div>
+                    <div>
+                        <label for="qty">qty</label>
+                        <input type="number" name="product code" id="qty">
+                    </div>
+                    <div>
+                        <label for="perPrice">Price</label>
+                        <input type="number" name="Price" id="Price">
+                    </div>
+                    <div class="form_action--button">
+                     <input type="Submit" id="Submit">
+                     <input type="Reset" id="Reset">
+                    </div>
+                </form>
+                <td>
+                    <table class="list" id="Storelist">
+                        <thead>
+                            <tr>
+                                <th>ProductCode</th>
+                                <th>Product Name</th>
+                                <th>qty</th>
+                                <th>Price</th>
+                            </tr>
+                  </table>
+                </td>
+            </td>
+        </tr>
+    </table>
+    <script src="crud.js">crudjs</script>
+</body>
+</html>
